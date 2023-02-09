@@ -9,16 +9,25 @@
 </head>
 <body>
     <p class="title">Sign up to get data sold.</p>
-    <form id="main" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post" autocomplete="on">
-        <label>Email</label>
-        <input type="email" name="email_field" id="email" class="input" placeholder="email@example.com" autocomplete="email">  
-        <label>+1</label>
-        <input type="tel" id="phoneNum" name="phone_field" class="input" placeholder="Phone Number" maxlength="10" autocomplete="tel">
-        <label>Date of birth</label>
-        <input type="date" id="bDay" name="dob" class="input" autocomplete="bday">
+    <div class="box">
+      <form id="main" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post" autocomplete="on">
+        <div>
+          <label>Email</label>
+          <input type="email" name="email_field" id="email" class="input" placeholder="email@example.com" autocomplete="email">  
+        </div>
+        <div>
+          <label>+1</label>
+          <input type="tel" id="phoneNum" name="phone_field" class="input" placeholder="Phone Number" maxlength="10" autocomplete="tel">
+        </div>
+        <div>
+          <!-- DOB SET TO COMMENTS FIELD IN PHP FORM-->
+          <label>Date of birth</label>
+          <input type="date" id="bDay" name="comments_field" class="input" autocomplete="bday">
+        </div>
         <input type="hidden" name="hidden_field" value="Nicholas Simpkins">
         <input type="submit" value="Submit">
-    </form>
+      </form>
+    </div>
 
 </body>
 </html>
